@@ -23,7 +23,7 @@ class handler(BaseHTTPRequestHandler):
             }
 
             # Simple keyword matching
-            response_text = "I'm a basic chatbot running on Vercel. For advanced AI features, please deploy the full backend to PythonAnywhere with OpenAI integration."
+            response_text = "I'm Myntra Healthchatbot and I'm here to assist you with your queries."
 
             for keyword, reply in responses.items():
                 if keyword in message.lower():
