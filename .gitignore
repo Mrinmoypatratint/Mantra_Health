@@ -9,18 +9,26 @@ venv/
 *.egg-info/
 dist/
 build/
+*.pyc
 
 # Node
 node_modules/
 npm-debug.log*
 build/
 .env.local
+.env
+package-lock.json
+%TEMP%npm-cache-temp/
+npm-cache/
+.npm/
+nul
 
 # Models and data
 *.pth
 *.onnx
 data/
 checkpoints/
+logs/
 
 # IDE
 .vscode/
@@ -30,3 +38,15 @@ checkpoints/
 # OS
 .DS_Store
 Thumbs.db
+
+# TensorBoard
+events.out.tfevents.*
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Docker
+*.log
+
+.vercel

@@ -1,0 +1,36 @@
+# Backend and Python files
+backend/
+*.py
+*.pyc
+__pycache__/
+venv/
+.venv/
+
+# ML Models and data
+checkpoints/
+models/
+data/
+training/
+notebooks/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Large files
+*.pth
+*.ckpt
+*.h5
+*.pkl
+
+# Development files
+*.bat
+*.sh
+install.*
+start.*
+docker-compose.yml
+Dockerfile
