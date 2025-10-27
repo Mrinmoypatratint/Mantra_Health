@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm start)",
+      "Bash(timeout /t 15 /nobreak)",
+      "Bash(npm install)",
+      "Bash(npm cache clean:*)",
+      "Bash(rd /s /q node_modules)",
+      "Bash(npm install:*)",
+      "Bash(powershell -Command:*)",
+      "Read(//c/Users/Mrinmoy Patra/Desktop/Myntra/Mantra_health/xray-healthcare-ai/**)",
+      "Bash(dir:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

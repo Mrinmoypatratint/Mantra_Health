@@ -1,0 +1,20 @@
+# Minimal requirements for Vercel deployment
+# Note: Full ML functionality may be limited due to size constraints
+
+# Web Framework
+fastapi>=0.104.1
+python-multipart>=0.0.6
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Image Processing (minimal)
+Pillow>=10.0.0
+numpy>=1.24.0,<2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional: Add these if you have Pro plan with higher limits
+# torch==2.0.0+cpu --find-links https://download.pytorch.org/whl/torch_stable.html
+# torchvision==0.15.0+cpu --find-links https://download.pytorch.org/whl/torch_stable.html
+# opencv-python-headless>=4.8.0

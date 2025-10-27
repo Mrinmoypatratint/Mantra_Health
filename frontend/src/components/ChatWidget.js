@@ -7,6 +7,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, MessageSquare, Loader } from 'lucide-react';
+import { API_ENDPOINTS } from '../config';
 
 function ChatWidget({ isOpen, onToggle }) {
   const [messages, setMessages] = useState([
@@ -39,7 +40,7 @@ function ChatWidget({ isOpen, onToggle }) {
 
     try {
       // Call chatbot API
-      const response = await fetch('http://localhost:8000/chatbot', {
+      const response = await fetch(API_ENDPOINTS.chatbot, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -15,6 +15,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 import Footer from './components/Footer';
 import { Upload, Activity, Brain, MessageSquare, Home } from 'lucide-react';
 import './App.css';
+import { API_ENDPOINTS } from './config';
 
 function App() {
   const [showLanding, setShowLanding] = useState(true);
@@ -36,7 +37,7 @@ function App() {
       formData.append('file', file);
 
       // Call backend API
-      const response = await fetch('http://localhost:8000/enhance', {
+      const response = await fetch(API_ENDPOINTS.enhance, {
         method: 'POST',
         body: formData,
       });
